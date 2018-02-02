@@ -29,9 +29,9 @@
     border-radius: 6px;
   }
 
-   button:focus {
+  button:focus {
     outline: none;
-   }
+  }
 
   #code {
     box-sizing: border-box;
@@ -63,6 +63,16 @@
     box-sizing: content-box;
   }
 
+  .cover::before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 100px;
+    top: 70%;
+    left: 0;
+    background: #fff;
+    transform: rotate(-18deg);
+  }
 
   @media (max-width: 700px) {
     #code {
