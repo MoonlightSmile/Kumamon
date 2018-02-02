@@ -1,6 +1,6 @@
 const Prism = require("prismjs")
-import "./src/css/main.css"
-import "./src/css/prism.css"
+import "./css/main.css"
+import "./css/prism.css"
 const writeCss = (prefix, result, duration, callBack) => {
   let n = 0;
   const pre = document.querySelector("#code")
