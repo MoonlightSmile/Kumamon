@@ -1,12 +1,15 @@
 const Prism = require("prismjs")
 import "./css/main.css"
 import "./css/prism.css"
+
+let skip = false;
 const writeCss = (prefix, result, duration, callBack) => {
   let n = 0;
   const pre = document.querySelector("#code")
   const style = document.querySelector(`#styleTag`)
   setTimeout(function delayed() {
     n += 1
+    if(skip) return;
     if (n <= result.length) {
       style.innerHTML = prefix + result.substring(0, n)
       pre.innerHTML = Prism.highlight(prefix + result.substring(0, n), Prism.languages.css);
@@ -15,6 +18,7 @@ const writeCss = (prefix, result, duration, callBack) => {
     } else {
       callBack && callBack()
     }
+
   }, duration)
 }
 
@@ -260,11 +264,6 @@ var Kumamon = `/*
     left: 52%;
   }
 
-
-
-  .body .hand.left::after {}
-
-
   .d::after {
     content: '';
     position: absolute;
@@ -306,7 +305,18 @@ var Kumamon = `/*
   }
 `
 
-writeCss("", Kumamon, 1, () => {
+writeCss("", Kumamon, 0, () => {
   console.log(1);
+})
+
+
+const btn = document.querySelector("button")
+const style = document.querySelector(`#styleTag`)
+const pre = document.querySelector("#code")
+
+btn.addEventListener("click", ()=>{
+  skip = true;
+  style.innerHTML = Kumamon
+  pre.innerHTML = Prism.highlight(Kumamon, Prism.languages.css);
 })
 
