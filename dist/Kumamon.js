@@ -1310,7 +1310,7 @@ btn.addEventListener("click", () => {
   style.innerHTML = Kumamon;
   pre.innerHTML = Prism.highlight(Kumamon, Prism.languages.css);
 });
-},{"prismjs":6,"./css/main.css":3,"./css/prism.css":4}],15:[function(require,module,exports) {
+},{"prismjs":6,"./css/main.css":3,"./css/prism.css":4}],8:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -1330,7 +1330,7 @@ module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
-  var ws = new WebSocket('ws://' + hostname + ':' + '50423' + '/');
+  var ws = new WebSocket('ws://' + hostname + ':' + '53466' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -1431,5 +1431,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id);
   });
 }
-},{}]},{},[15,2])
+},{}]},{},[8,2])
 //# sourceMappingURL=/dist/Kumamon.map

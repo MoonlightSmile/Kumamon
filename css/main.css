@@ -56,7 +56,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    overflow: scroll;
+    overflow: hidden;
+    height: 100vh;
   }
 
   .bear * {
@@ -82,17 +83,20 @@
       top: 0;
       left: 0;
       right: 0;
-      height: 30%;
-      width: 100%;
+      height: 25%;
+      width: 100vw;
+      height: 25vh;
     }
     .bear {
       margin: 0;
-      width: 100%;
       border: 1px solid red;
       position: fixed;
-      top: 30%;
+      top: 25%;
       bottom: 0;
       left: 0;
       right: 0;
+      width: 100vw;
+      height: 75vh;
+      overflow: hidden;
     }
   }
