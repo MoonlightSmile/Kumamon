@@ -6,6 +6,7 @@
   "author": "moonlight <362652565@qq.com>",
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^1.1.0",
     "prismjs": "^1.10.0"
   }
 }
