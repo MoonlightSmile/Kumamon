@@ -159,6 +159,16 @@ var Kumamon = `/*
     z-index: 2;
   }
 
+  .mouse {
+    position: relative;
+    border: 1px solid #000;
+    height: 60px;
+    width: 80px;
+    border-radius: 50%;
+    top: 45%;
+    left: 58px;
+    background: #fff;
+  }
   .nose {
     position: absolute;
     width: 18px;
@@ -170,18 +180,6 @@ var Kumamon = `/*
     border-radius: 40% 100% 40% 70%;
     transform: rotate(-45deg);
   }
-
-  .mouse {
-    position: relative;
-    border: 1px solid #000;
-    height: 60px;
-    width: 80px;
-    border-radius: 50%;
-    top: 45%;
-    left: 58px;
-    background: #fff;
-  }
-
   .mouse::before {
     position: absolute;
     content: '';
@@ -304,6 +302,7 @@ var Kumamon = `/*
     top: -30px;
     transform: rotate(-18deg);
     border-bottom-right-radius: 20px 40px;
+    border-bottom-left-radius: 20px 40px;
   }
 `
 
