@@ -29,6 +29,10 @@
     border-radius: 6px;
   }
 
+   button:focus {
+    outline: none;
+   }
+
   #code {
     box-sizing: border-box;
     position: fixed;
