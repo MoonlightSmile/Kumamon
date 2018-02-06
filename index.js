@@ -1,6 +1,5 @@
 const Prism = require("prismjs")
 import "./css/main.css"
-import "./css/prism.css"
 
 let skip = false;
 const writeCss = (prefix, result, duration, callBack) => {
@@ -28,7 +27,7 @@ var Kumamon = `/*
 * {
   transition: all 1s;
 }
-
+/*先画他的头*/
 .head {
     position: relative;
     width: 160px;
@@ -37,7 +36,7 @@ var Kumamon = `/*
     background: #000;
     border-radius: 50%;
   }
-
+/*两只耳朵*/
   .head::before {
     content: '';
     position: absolute;
@@ -58,7 +57,7 @@ var Kumamon = `/*
     top: 4%;
     right: 0;
   }
-
+/*两只眼睛*/
   .eye {
     position: absolute;
     width: 28px;
