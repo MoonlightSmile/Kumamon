@@ -136,6 +136,9 @@ button {
   z-index: 1;
   border:none;
 }
+span.btn {
+  display: none;
+}
 
 button:focus {
   outline: none;
